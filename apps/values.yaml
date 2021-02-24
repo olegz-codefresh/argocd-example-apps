@@ -3,4 +3,4 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/olegz-codefresh/argocd-example-apps
-    targetRevision: aa
+    targetRevision: HEAD
