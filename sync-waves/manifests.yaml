@@ -80,7 +80,7 @@ spec:
     spec:
       containers:
         - name: main
-          image: gcr.io/codefresh-inc/codefresh/cf-platform-analytics:0.6.5
+          image: nginx:latest
 ---
 apiVersion: v1
 kind: Service
