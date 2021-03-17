@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: pipeline-manager
-          image:  gcr.io/codefresh-inc/codefresh/pipeline-manager:3.111.0
+          image: olehzahnitko/argocd:1.2.52
           command: ["sleep", "5"]
       restartPolicy: Never
 ---
