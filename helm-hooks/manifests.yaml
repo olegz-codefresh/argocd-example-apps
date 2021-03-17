@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: upgrade-sql-schema
+  generateName: pipeline-manager
   annotations:
     helm.sh/hook: pre-install
     helm.sh/hook-weight: "-2"
@@ -10,8 +10,8 @@ spec:
   template:
     spec:
       containers:
-        - name: upgrade-sql-schema
-          image: alpine:latest
+        - name: pipeline-manager
+          image:  gcr.io/codefresh-inc/codefresh/pipeline-manager:3.111.0
           command: ["sleep", "5"]
       restartPolicy: Never
 ---
@@ -78,6 +78,6 @@ spec:
     spec:
       containers:
         - name: page-down
-          image: alpine:latest
+          image: gcr.io/codefresh-inc/codefresh/cf-api:21.19.3
           command: ["sleep", "2"]
       restartPolicy: Never
