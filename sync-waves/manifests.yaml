@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: pipeline-manager
-          image: olehzahnitko/argocd:1.2.45
+          image: olehzahnitko/argocd:1.6.1
           command: ["sleep", "5"]
       restartPolicy: Never
 ---
