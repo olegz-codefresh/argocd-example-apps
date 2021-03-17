@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: main
-          image: gcr.io/codefresh-inc/codefresh/cf-api:21.19.3
+          image: alpine:latest
 ---
 apiVersion: v1
 kind: Service

@@ -78,6 +78,6 @@ spec:
     spec:
       containers:
         - name: page-down
-          image: gcr.io/codefresh-inc/codefresh/cf-api:21.19.3
+          image: alpine:latest
           command: ["sleep", "2"]
       restartPolicy: Never
