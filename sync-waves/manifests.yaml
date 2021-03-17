@@ -80,7 +80,7 @@ spec:
     spec:
       containers:
         - name: main
-          image: gcr.io/codefresh-inc/codefresh/cf-ui:14.28.0
+          image: gcr.io/codefresh-inc/codefresh/cf-ui:14.27.0
 ---
 apiVersion: v1
 kind: Service
